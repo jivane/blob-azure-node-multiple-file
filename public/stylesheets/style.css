@@ -1,15 +1,41 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: Verdana, sans-serif;
 }
-
-a {
-  color: #00B7FF;
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
 }
-
-.upload-container {
-  border: solid 1px #ccc;
-  padding: 10px;
-  max-width: fit-content;
-  margin-bottom: 10px
+#message {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+input[type="submit"] {
+  background-color: #0077CC; 
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+th {
+  background-color: #0077CC;
+  color: white;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
 }

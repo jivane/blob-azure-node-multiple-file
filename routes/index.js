@@ -11,9 +11,10 @@ const {
 const express = require('express');
 const router = express.Router();
 const containerName = process.env.CONTAINER_NAME;
+const fileLimit = process.env.LIMIT_UPLOAD_FILE_NUMBER;
 const multer = require('multer');
 const inMemoryStorage = multer.memoryStorage();
-const uploadStrategy = multer({ storage: inMemoryStorage }).array('image',4);
+const uploadStrategy = multer({ storage: inMemoryStorage }).array('image',fileLimit);
 
 const getStream = require('into-stream');
 
